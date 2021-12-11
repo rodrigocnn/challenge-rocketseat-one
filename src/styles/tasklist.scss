@@ -39,6 +39,8 @@ section.task-list {
         &::placeholder {
           color: var(--text-light)
         }
+
+      
       }
 
       button {
@@ -56,6 +58,13 @@ section.task-list {
 
         &:hover {
           filter: brightness(0.95);
+        }
+
+        &:disabled {
+          background-color: #aaa;
+          color: grey;
+          border: 1px solid grey;
+          cursor: none;
         }
       }
     }
